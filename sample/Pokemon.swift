@@ -23,6 +23,6 @@ struct Sprites: Codable {
     let frontImage: String
 
     enum CodingKeys: String, CodingKey {
-        case front_default = "front_default"
+        case frontImage = "front_default"
     }
 }
