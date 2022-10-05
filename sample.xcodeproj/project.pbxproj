@@ -16,10 +16,12 @@
 		362C47C028EA922100C85E1E /* sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C47BF28EA922100C85E1E /* sampleTests.swift */; };
 		362C47CA28EA922100C85E1E /* sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C47C928EA922100C85E1E /* sampleUITests.swift */; };
 		362C47CC28EA922100C85E1E /* sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C47CB28EA922100C85E1E /* sampleUITestsLaunchTests.swift */; };
-		362C47DE28EAB07100C85E1E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C47DC28EAB07100C85E1E /* CustomCell.swift */; };
-		362C47DF28EAB07100C85E1E /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362C47DD28EAB07100C85E1E /* CustomCell.xib */; };
-		3694271028ED0C7400902B2C /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3694270F28ED0C7400902B2C /* detailViewController.swift */; };
+		362C47DE28EAB07100C85E1E /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C47DC28EAB07100C85E1E /* PokemonCollectionViewCell.swift */; };
+		362C47DF28EAB07100C85E1E /* PokemonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362C47DD28EAB07100C85E1E /* PokemonCollectionViewCell.xib */; };
+		3694271028ED0C7400902B2C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3694270F28ED0C7400902B2C /* DetailViewController.swift */; };
 		42CC23ACA21C7CDBAC38490F /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68850B98F03FC3FA54F721F3 /* Pods_sample.framework */; };
+		954BB68C28ED54A400652E97 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954BB68B28ED54A400652E97 /* Model.swift */; };
+		954BB68E28ED56D800652E97 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954BB68D28ED56D800652E97 /* Pokemon.swift */; };
 		B3B86FA94139DB743F9C4782 /* Pods_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F0B4A5841C0DCFA4E24747 /* Pods_sampleTests.framework */; };
 		F49ECBD6BB9A972DACCE1DBC /* Pods_sample_sampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A59DA85AAC856345B222B4 /* Pods_sample_sampleUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,13 +58,15 @@
 		362C47C528EA922100C85E1E /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362C47C928EA922100C85E1E /* sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUITests.swift; sourceTree = "<group>"; };
 		362C47CB28EA922100C85E1E /* sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		362C47DC28EAB07100C85E1E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		362C47DD28EAB07100C85E1E /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		362C47DC28EAB07100C85E1E /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		362C47DD28EAB07100C85E1E /* PokemonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCollectionViewCell.xib; sourceTree = "<group>"; };
 		3632269EB6E846F230B9C6B8 /* Pods-sample-sampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-sampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-sample-sampleUITests/Pods-sample-sampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3694270F28ED0C7400902B2C /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		3694270F28ED0C7400902B2C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		50A55E2BC31D5B16CE4D2DA1 /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		68850B98F03FC3FA54F721F3 /* Pods_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E87EDF2CF197D9D606A140 /* Pods-sampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTests.release.xcconfig"; path = "Target Support Files/Pods-sampleTests/Pods-sampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		954BB68B28ED54A400652E97 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		954BB68D28ED56D800652E97 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		B3A59DA85AAC856345B222B4 /* Pods_sample_sampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample_sampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDF9825B942F76F2DDA3E4F /* Pods-sample-sampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-sampleUITests.release.xcconfig"; path = "Target Support Files/Pods-sample-sampleUITests/Pods-sample-sampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D15AFAC936D9879D392A19FE /* Pods-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-sampleTests/Pods-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,10 +138,12 @@
 			children = (
 				362C47A828EA922000C85E1E /* AppDelegate.swift */,
 				362C47AA28EA922000C85E1E /* SceneDelegate.swift */,
+				954BB68D28ED56D800652E97 /* Pokemon.swift */,
 				362C47AC28EA922000C85E1E /* ViewController.swift */,
-				3694270F28ED0C7400902B2C /* detailViewController.swift */,
-				362C47DD28EAB07100C85E1E /* CustomCell.xib */,
-				362C47DC28EAB07100C85E1E /* CustomCell.swift */,
+				954BB68B28ED54A400652E97 /* Model.swift */,
+				3694270F28ED0C7400902B2C /* DetailViewController.swift */,
+				362C47DD28EAB07100C85E1E /* PokemonCollectionViewCell.xib */,
+				362C47DC28EAB07100C85E1E /* PokemonCollectionViewCell.swift */,
 				362C47AE28EA922000C85E1E /* Main.storyboard */,
 				362C47B128EA922100C85E1E /* Assets.xcassets */,
 				362C47B328EA922100C85E1E /* LaunchScreen.storyboard */,
@@ -287,7 +293,7 @@
 			files = (
 				362C47B528EA922100C85E1E /* LaunchScreen.storyboard in Resources */,
 				362C47B228EA922100C85E1E /* Assets.xcassets in Resources */,
-				362C47DF28EAB07100C85E1E /* CustomCell.xib in Resources */,
+				362C47DF28EAB07100C85E1E /* PokemonCollectionViewCell.xib in Resources */,
 				362C47B028EA922000C85E1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954BB68E28ED56D800652E97 /* Pokemon.swift in Sources */,
 				362C47AD28EA922000C85E1E /* ViewController.swift in Sources */,
 				362C47A928EA922000C85E1E /* AppDelegate.swift in Sources */,
-				362C47DE28EAB07100C85E1E /* CustomCell.swift in Sources */,
-				3694271028ED0C7400902B2C /* detailViewController.swift in Sources */,
+				362C47DE28EAB07100C85E1E /* PokemonCollectionViewCell.swift in Sources */,
+				954BB68C28ED54A400652E97 /* Model.swift in Sources */,
+				3694271028ED0C7400902B2C /* DetailViewController.swift in Sources */,
 				362C47AB28EA922000C85E1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
