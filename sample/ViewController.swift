@@ -17,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         var pokeName:String
         var pokeImageURL:String
     }
-    
+     
     let pokeapi = "https://pokeapi.co/api/v2/pokemon/"
     
     struct PokemonData: Codable{
